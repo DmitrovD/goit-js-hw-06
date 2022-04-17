@@ -22,3 +22,18 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* Добавь минимальное оформление галереи флексбоксами или 
+гридами через CSS классы. */
+
+.gallery {
+	display: flex;
+  
+	justify-content: center;
+}
+
+.gallery li {
+	margin: 40px;
+
+	list-style: none;
+}
