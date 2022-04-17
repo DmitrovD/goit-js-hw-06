@@ -4,7 +4,7 @@
 // подставляет его текущее значение в span#name - output.
 
 
-const inputNm = document.querySelector(`#name-input`);
+const inputNm = document.querySelector('#name-input');
 const outputNm = document.querySelector('#name-output');
 
 inputNm.addEventListener('input', onInputChange);
