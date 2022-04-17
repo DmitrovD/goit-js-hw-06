@@ -12,3 +12,26 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+// Задание 3
+// Напиши скрипт для создания галереи изображений 
+// по массиву данных.В HTML есть список ul.gallery.
+
+// Используй массив объектов images для создания элементов
+//   < img > вложенных в < li >.Для создания разметки используй 
+//   шаблонные строки и метод insertAdjacentHTML().
+
+const gallery = document.querySelector(".gallery");
+
+const createGalaryImg = animals =>
+	animals.map(({ url, alt }) => 
+    `<li><img src="${url}" width="450" height="300" alt="${alt}"></li>`
+
+	);
+
+  // Все элементы галереи должны добавляться в DOM за одну 
+// операцию вставки.
+
+gallery.insertAdjacentHTML("beforeend", createGalaryImg(images).join(" "));
+
+
