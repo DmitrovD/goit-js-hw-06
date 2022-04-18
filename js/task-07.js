@@ -10,7 +10,6 @@ const growText = document.querySelector('#text')
 
 turnInput.addEventListener('input', onInputChange)
 
-function onInputChange (numb) {
-    growText.style.fontSize = turnInput.value+px;
+function onInputChange (grow) {
+    growText.style.fontSize =`${turnInput.value}px`;
 }; 
- 
